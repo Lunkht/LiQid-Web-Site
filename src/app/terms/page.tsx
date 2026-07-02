@@ -13,15 +13,15 @@ export default function TermsPage() {
           <div className="prose prose-sm text-text-secondary space-y-6">
             <p>
               Les présentes conditions générales d'utilisation régissent
-              l&apos;accès et l&apos;utilisation de l&apos;application Liqid
-              éditée par Liqid SAS.
+              l&apos;accès et l&apos;utilisation de l&apos;application LiQid
+              éditée par LiQid SAS.
             </p>
 
             <h2 className="text-lg font-semibold text-foreground mt-8">
               1. Acceptation des conditions
             </h2>
             <p>
-              En créant un compte et en utilisant l&apos;application Liqid,
+              En créant un compte et en utilisant l&apos;application LiQid,
               vous acceptez pleinement et sans réserve les présentes conditions
               générales d&apos;utilisation.
             </p>
@@ -30,7 +30,7 @@ export default function TermsPage() {
               2. Description du service
             </h2>
             <p>
-              Liqid est une application bancaire qui permet d&apos;effectuer
+              LiQid est une application bancaire qui permet d&apos;effectuer
               des virements, de gérer des cartes, d&apos;échanger des devises
               et d&apos;accéder à des services financiers depuis un seul
               interface.

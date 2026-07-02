@@ -35,10 +35,10 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm">
                 L
               </div>
-              <span className="text-lg font-semibold text-white">Liqid</span>
+              <span className="text-lg font-semibold text-white">LiQid</span>
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
-              Banque intelligente sans frontières. Liqid SAS — Paris, France.
+              Banque intelligente sans frontières. LiQid SAS — Paris, France.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/60">
-            &copy; {new Date().getFullYear()} Liqid. Tous droits réservés.
+            &copy; {new Date().getFullYear()} LiQid. Tous droits réservés.
           </p>
           <div className="flex items-center gap-4">
             {["Twitter", "LinkedIn", "Instagram", "YouTube"].map((social) => (

@@ -9,7 +9,7 @@ export default function Download() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white">
             Prêt à rejoindre
             <br />
-            <span className="gradient-text">Liqid ?</span>
+            <span className="gradient-text">LiQid ?</span>
           </h2>
 
           <p className="text-lg text-white/70">

@@ -42,7 +42,7 @@ export default function LoginPage() {
         <div className="w-full max-w-sm space-y-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2 mb-8">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ff6b35] to-[#ff8c42] flex items-center justify-center text-white font-bold text-sm">L</div>
-            <span className="text-lg font-semibold text-foreground">Liqid</span>
+            <span className="text-lg font-semibold text-foreground">LiQid</span>
           </Link>
 
           <div className="space-y-2">
@@ -103,7 +103,7 @@ export default function LoginPage() {
         <div className="text-center">
           <Link href="/" className="inline-flex items-center gap-2 mb-8">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ff6b35] to-[#ff8c42] flex items-center justify-center text-white font-bold text-sm">L</div>
-            <span className="text-lg font-semibold text-foreground">Liqid</span>
+            <span className="text-lg font-semibold text-foreground">LiQid</span>
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Connexion</h1>
           <p className="text-sm text-text-secondary mt-2">Entrez votre numéro de téléphone</p>

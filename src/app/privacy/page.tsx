@@ -12,7 +12,7 @@ export default function PrivacyPage() {
           </h1>
           <div className="prose prose-sm text-text-secondary space-y-6">
             <p>
-              Liqid SAS accorde une grande importance à la protection de vos
+              LiQid SAS accorde une grande importance à la protection de vos
               données personnelles. La présente politique de confidentialité
               vous informe de la manière dont nous collectons, utilisons et
               protégeons vos informations.
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
             </h2>
             <p>
               Le traitement de vos données repose sur votre consentement,
-              l&apos;exécution du contrat qui vous lie à Liqid, et le respect
+              l&apos;exécution du contrat qui vous lie à LiQid, et le respect
               de nos obligations légales.
             </p>
 

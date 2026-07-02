@@ -18,7 +18,7 @@ export default function Header() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-accent/20">
             L
           </div>
-          <span className="text-lg font-semibold text-white">Liqid</span>
+          <span className="text-lg font-semibold text-white">LiQid</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1">
