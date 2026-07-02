@@ -1,9 +1,11 @@
+import ScrollReveal from "@/components/ScrollReveal";
+
 export default function Download() {
   return (
     <section id="download" className="py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 hero-gradient opacity-50" />
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="max-w-2xl mx-auto text-center space-y-8">
+        <ScrollReveal className="max-w-2xl mx-auto text-center space-y-8 rounded-[32px] border border-card-border bg-card-bg/80 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] backdrop-blur">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
             Prêt à rejoindre
             <br />
@@ -39,7 +41,7 @@ export default function Download() {
           <p className="text-xs text-text-tertiary pt-4">
             Gratuit · Aucune carte bancaire requise · 5 minutes suffisent
           </p>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

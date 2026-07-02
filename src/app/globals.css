@@ -30,6 +30,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
 .gradient-text {
@@ -60,7 +61,28 @@ body {
 }
 
 .hero-gradient {
-  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.12), transparent);
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.18), transparent);
+}
+
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent);
+}
+
+.section-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 html {

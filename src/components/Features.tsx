@@ -1,3 +1,5 @@
+import ScrollReveal from "@/components/ScrollReveal";
+
 const FEATURES = [
   {
     title: "Virements instantanés",
@@ -73,7 +75,7 @@ export default function Features() {
   return (
     <section id="features" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <ScrollReveal className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="inline-block text-xs font-semibold text-accent uppercase tracking-widest">
             Fonctionnalités
           </span>
@@ -86,14 +88,11 @@ export default function Features() {
             Une application bancaire complète qui réunit tous les services
             financiers essentiels au même endroit.
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURES.map((feature) => (
-            <div
-              key={feature.title}
-              className="group relative p-7 rounded-2xl border border-card-border bg-card-bg hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
-            >
+            <ScrollReveal key={feature.title} className="group relative p-7 rounded-2xl border border-card-border bg-card-bg hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 hover:-translate-y-1">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center text-accent mb-5 group-hover:from-accent/20 group-hover:to-accent/10 transition-colors">
                 {feature.icon}
               </div>
@@ -103,7 +102,7 @@ export default function Features() {
               <p className="text-sm text-text-secondary leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

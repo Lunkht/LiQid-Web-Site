@@ -1,3 +1,5 @@
+import ScrollReveal from "@/components/ScrollReveal";
+
 const PLANS = [
   {
     name: "Standard",
@@ -57,7 +59,7 @@ export default function Plans() {
   return (
     <section id="plans" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <ScrollReveal className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="inline-block text-xs font-semibold text-accent uppercase tracking-widest">
             Tarifs
           </span>
@@ -69,11 +71,11 @@ export default function Plans() {
           <p className="text-text-secondary text-lg">
             Évoluez à votre rythme. Changez de plan à tout moment sans frais.
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {PLANS.map((plan) => (
-            <div
+            <ScrollReveal
               key={plan.name}
               className={`relative rounded-2xl border p-8 transition-all duration-300 flex flex-col ${
                 plan.popular
@@ -128,7 +130,7 @@ export default function Plans() {
                   {plan.price === "0" ? "Commencer" : "Souscrire"}
                 </a>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
