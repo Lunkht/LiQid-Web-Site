@@ -15,9 +15,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/70 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.18)]">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-accent/20">
-            L
-          </div>
+          <img src="/icon.svg" alt="LiQid" className="w-8 h-8 rounded-lg object-cover" />
           <span className="text-lg font-semibold text-white">LiQid</span>
         </a>
 

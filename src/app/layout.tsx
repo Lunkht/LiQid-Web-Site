@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Liqid – Banque intelligente, sans frontières",
+  icons: {
+    icon: "/icon.svg",
+  },
   description:
     "LiQid est l'application bancaire qui vous suit partout. Virements, crypto, cartes, change de devises — le tout dans une seule app. Disponible sur iOS et Android.",
   openGraph: {
