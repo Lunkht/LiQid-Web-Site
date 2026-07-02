@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const QUICK_ACTIONS = [
   { label: "Envoyer", icon: "↑", color: "from-[#ff6b35] to-[#ff8c42]" },
   { label: "Recevoir", icon: "↓", color: "from-[#22c55e] to-[#16a34a]" },
@@ -39,7 +41,7 @@ export default function DashboardPage() {
                 <path d="M13.73 21a2 2 0 01-3.46 0" />
               </svg>
             </button>
-            <a href="/" className="text-xs text-text-tertiary hover:text-text-secondary transition-colors">Déconnexion</a>
+            <Link href="/" className="text-xs text-text-tertiary hover:text-text-secondary transition-colors">Déconnexion</Link>
           </div>
         </div>
       </header>

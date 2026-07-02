@@ -14,17 +14,19 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-card-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <img src="/icon.svg" alt="Liqid" className="w-8 h-8" />
+        <a href="#" className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm">
+            L
+          </div>
           <span className="text-lg font-semibold text-foreground">Liqid</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-1">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-text-secondary hover:text-foreground transition-colors"
+              className="text-sm text-text-secondary hover:text-foreground hover:bg-card-bg px-4 py-2 rounded-lg transition-colors"
             >
               {item.label}
             </a>

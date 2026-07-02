@@ -6,7 +6,7 @@
   --accent: #ff6b35;
   --accent-hover: #e85d2c;
   --card-bg: #ffffff;
-  --card-border: #e1e1e6;
+  --card-border: #e8e8ee;
   --text-secondary: #6b7280;
   --text-tertiary: #9ca3af;
   --success: #22c55e;
@@ -61,4 +61,13 @@ body {
 
 .hero-gradient {
   background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.12), transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 107, 53, 0.2);
+  color: var(--foreground);
 }
