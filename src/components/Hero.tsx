@@ -8,7 +8,7 @@ export default function Hero() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80')",
+              "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-950/70 to-[#ff6b35]/30" />
