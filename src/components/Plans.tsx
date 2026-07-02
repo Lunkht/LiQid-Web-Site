@@ -57,7 +57,7 @@ const PLANS = [
 
 export default function Plans() {
   return (
-    <section id="plans" className="py-24 md:py-32">
+    <section id="plans" className="relative py-24 md:py-32 bg-[linear-gradient(180deg,_rgba(255,107,53,0.03),_transparent)]">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="inline-block text-xs font-semibold text-accent uppercase tracking-widest">
@@ -77,9 +77,9 @@ export default function Plans() {
           {PLANS.map((plan) => (
             <ScrollReveal
               key={plan.name}
-              className={`relative rounded-2xl border p-8 transition-all duration-300 flex flex-col ${
+              className={`relative rounded-3xl border p-8 transition-all duration-300 flex flex-col overflow-hidden ${
                 plan.popular
-                  ? "border-accent/50 bg-card-bg glow scale-105 md:scale-105"
+                  ? "border-accent/50 bg-gradient-to-br from-white to-orange-50/80 glow scale-105 md:scale-105"
                   : "border-card-border bg-card-bg hover:border-card-border/80 hover:-translate-y-1"
               }`}
             >

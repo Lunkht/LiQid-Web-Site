@@ -22,6 +22,10 @@ export default function Hero() {
               <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
               Bientôt disponible sur iOS et Android
             </div>
+            <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm text-white/80">
+              <span className="h-2 w-2 rounded-full bg-accent" />
+              Sécurité bancaire renforcée · 256-bit
+            </div>
 
             <h1 className="mt-6 text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-white">
               La banque qui
@@ -71,7 +75,10 @@ export default function Hero() {
           </ScrollReveal>
 
           <ScrollReveal className="relative">
-            <div className="section-float rounded-[32px] border border-white/10 bg-white/10 backdrop-blur-2xl p-4 shadow-[0_25px_90px_rgba(0,0,0,0.35)]">
+            <div className="section-float glass-panel rounded-[32px] border border-white/10 bg-white/10 p-4 shadow-[0_25px_90px_rgba(0,0,0,0.35)]">
+              <div className="absolute -top-4 -right-4 rounded-full border border-accent/20 bg-accent/15 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur">
+                Live analytics
+              </div>
               <div className="rounded-[24px] bg-slate-950/85 p-5 border border-white/10">
                 <div className="flex items-center justify-between">
                   <div>

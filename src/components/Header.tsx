@@ -12,13 +12,13 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-card-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/70 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.18)]">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-accent/20">
             L
           </div>
-          <span className="text-lg font-semibold text-foreground">Liqid</span>
+          <span className="text-lg font-semibold text-white">Liqid</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -26,7 +26,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-text-secondary hover:text-foreground hover:bg-card-bg px-4 py-2 rounded-lg transition-colors"
+              className="text-sm text-white/70 hover:text-white hover:bg-white/10 px-4 py-2 rounded-lg transition-colors"
             >
               {item.label}
             </a>
@@ -36,7 +36,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#download"
-            className="text-sm text-text-secondary hover:text-foreground transition-colors px-4 py-2"
+            className="text-sm text-white/70 hover:text-white transition-colors px-4 py-2"
           >
             Connexion
           </a>
@@ -49,7 +49,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden p-2 text-text-secondary"
+          className="md:hidden p-2 text-white/70"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
@@ -64,20 +64,20 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-card-border bg-background/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-white/10 bg-slate-950/95 backdrop-blur-xl">
           <div className="px-6 py-4 flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm text-text-secondary hover:text-foreground transition-colors py-2"
+                className="text-sm text-white/70 hover:text-white transition-colors py-2"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
             <hr className="border-card-border" />
-            <a href="#download" className="text-sm text-text-secondary py-2">
+            <a href="#download" className="text-sm text-white/70 py-2">
               Connexion
             </a>
             <a

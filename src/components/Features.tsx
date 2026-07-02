@@ -73,7 +73,7 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 md:py-32">
+    <section id="features" className="relative py-24 md:py-32 bg-[radial-gradient(circle_at_top,_rgba(255,107,53,0.08),_transparent_45%)]">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="inline-block text-xs font-semibold text-accent uppercase tracking-widest">
@@ -92,7 +92,7 @@ export default function Features() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURES.map((feature) => (
-            <ScrollReveal key={feature.title} className="group relative p-7 rounded-2xl border border-card-border bg-card-bg hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 hover:-translate-y-1">
+            <ScrollReveal key={feature.title} className="group relative p-7 rounded-2xl border border-card-border bg-gradient-to-br from-white via-white to-slate-50/90 hover:border-accent/30 hover:shadow-[0_18px_50px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center text-accent mb-5 group-hover:from-accent/20 group-hover:to-accent/10 transition-colors">
                 {feature.icon}
               </div>

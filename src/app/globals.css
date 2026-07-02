@@ -31,6 +31,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  background-image: radial-gradient(circle at top left, rgba(255,107,53,0.07), transparent 28%), linear-gradient(180deg, #f7f8fc 0%, #f2f4f9 100%);
 }
 
 .gradient-text {
@@ -61,7 +62,7 @@ body {
 }
 
 .hero-gradient {
-  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.18), transparent);
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.22), transparent), radial-gradient(circle at 85% 20%, rgba(255,255,255,0.16), transparent 25%);
 }
 
 .hero-grid {
@@ -73,6 +74,11 @@ body {
 
 .section-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.glass-panel {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 @keyframes float {
@@ -87,6 +93,20 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 ::selection {
