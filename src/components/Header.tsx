@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+
+const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const NAV_ITEMS = [
   { label: "Fonctionnalités", href: "#features" },
@@ -15,7 +18,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/70 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.18)]">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <img src="/icon.svg" alt="LiQid" className="w-8 h-8 rounded-lg object-cover" />
+          <Image src={`${bp}/icon.svg`} alt="LiQid" width={32} height={32} className="rounded-lg object-cover" />
           <span className="text-lg font-semibold text-white">LiQid</span>
         </a>
 

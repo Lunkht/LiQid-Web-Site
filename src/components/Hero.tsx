@@ -1,11 +1,13 @@
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
+const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section className="relative isolate min-h-[100svh] flex items-center pt-24 overflow-hidden bg-[#0a0a0f] text-white">
       <Image
-        src="/couple.png"
+        src={`${bp}/couple.png`}
         alt=""
         fill
         className="object-cover"
