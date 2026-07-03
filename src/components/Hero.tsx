@@ -1,18 +1,15 @@
-import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
-
-const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-[100svh] flex items-center pt-24 overflow-hidden bg-[#0a0a0f] text-white">
-      <Image
-        src={`${bp}/couple.png`}
-        alt=""
-        fill
-        className="object-cover"
-        priority
-      />
+    <section
+      className="relative isolate min-h-[100svh] flex items-center pt-24 overflow-hidden bg-[#0a0a0f] text-white"
+      style={{
+        backgroundImage: `url(${process.env.NODE_ENV === "production" ? "/LiQid-Web-Site" : ""}/couple.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="absolute inset-0 bg-[#0a0a0f]/60" />
       <div className="absolute inset-0 hero-gradient" />
       <div className="absolute inset-0 hero-grid" />
