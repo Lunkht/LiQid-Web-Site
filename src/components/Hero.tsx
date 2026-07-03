@@ -1,20 +1,19 @@
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-[100svh] flex items-center pt-24 overflow-hidden bg-[#050816] text-white">
-      <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80')",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-950/70 to-[#ff6b35]/30" />
-        <div className="absolute inset-0 hero-grid" />
-      </div>
+    <section className="relative isolate min-h-[100svh] flex items-center pt-24 overflow-hidden bg-[#0a0a0f] text-white">
+      <Image
+        src="/couple.png"
+        alt=""
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-[#0a0a0f]/60" />
       <div className="absolute inset-0 hero-gradient" />
+      <div className="absolute inset-0 hero-grid" />
       <div className="max-w-6xl mx-auto px-6 py-20 md:py-32 relative z-10">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
           <ScrollReveal className="max-w-3xl text-left lg:text-left">
